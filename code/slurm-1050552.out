@@ -1,0 +1,115 @@
+
+The following have been reloaded with a version change:
+  1) intel2018/psx => intel2018/icc
+
+SPAdes genome assembler v3.14.1
+
+Usage: spades.py [options] -o <output_dir>
+spades.py: error: Please specify option (e.g. -1, -2, -s, etc)) for the following paths: /scratch/sz2524/metagenomics/data/SRS301868/SPAdes
+diamond v0.9.36.137 (C) Max Planck Society for the Advancement of Science
+Documentation, support and updates available at http://www.diamondsearch.org
+
+#CPU threads: 40
+Scoring parameters: (Matrix=BLOSUM62 Lambda=0.267 K=0.041 Penalties=11/1)
+Temporary directory: /scratch/sz2524/metagenomics/data/SRS301868/DIAMOND
+Opening the database...  [0.241s]
+#Target sequences to report alignments for: 25
+Reference = /scratch/sz2524/metagenomics/database/2_raw_algs_db.dmnd
+Sequences = 15059424
+Letters = 119032778347
+Block size = 2000000000
+Opening the input file... No such file or directory
+ [0s]
+Error: Error opening file /scratch/sz2524/metagenomics/data/SRS301868/SPAdes/scaffolds.fasta
+Start Step2.2:  Tue Dec  8 22:39:05 2020
+Traceback (most recent call last):
+  File "/gpfsnyu/scratch/sz2524/metagenomics/code/DIAMOND_output_find_OG_PI_interval.py", line 8, in <module>
+    inputfile1=argv[1]#"inDir/database/COGFC_GN.tsv.gz"
+NameError: name 'argv' is not defined
+awk: fatal: cannot open file `/scratch/sz2524/metagenomics/data/SRS301868/DIAMOND/qseq_sseq_GNs_num.tsv' for reading (No such file or directory)
+Traceback (most recent call last):
+  File "/gpfsnyu/scratch/sz2524/metagenomics/code/find_highest_OG_PI.py", line 6, in <module>
+    inputfile1=argv[1]#"sorted_nondup_COGFunC_OG.tsv"
+NameError: name 'argv' is not defined
+awk: fatal: cannot open file `/scratch/sz2524/metagenomics/data/SRS301868/DIAMOND/DIAMOND_raw_output.m8' for reading (No such file or directory)
+awk: fatal: cannot open file `/scratch/sz2524/metagenomics/data/SRS301868/DIAMOND/nondup_COGFunC_OG_PI.tsv' for reading (No such file or directory)
+/var/spool/slurmd/job1050552/slurm_script: line 79: {runDir}/DIAMOND/nondup_COGFunC_OG_PI_dnum.tsv: No such file or directory
+Traceback (most recent call last):
+  File "/gpfsnyu/scratch/sz2524/metagenomics/code/duplicated_OG_PI.py", line 9, in <module>
+    inputfile1=argv[1]#"sorted_COGFC_diamond.tsv"
+NameError: name 'argv' is not defined
+awk: fatal: cannot open file `/scratch/sz2524/metagenomics/data/SRS301868/DIAMOND/DIAMOND_raw_output.m8' for reading (No such file or directory)
+sort: cannot read: /scratch/sz2524/metagenomics/data/SRS301868/DIAMOND/idx_COGFunC_OG_PI.tsv: No such file or directory
+Traceback (most recent call last):
+  File "/gpfsnyu/scratch/sz2524/metagenomics/code/change_s_e.py", line 5, in <module>
+    inputfile1=argv[1]#"reformat_diamond_output.tsv"
+NameError: name 'argv' is not defined
+awk: fatal: cannot open file `/scratch/sz2524/metagenomics/data/SRS301868/DIAMOND/change_s_e.tsv' for reading (No such file or directory)
+paste: /scratch/sz2524/metagenomics/data/SRS301868/DIAMOND/change_s_e.tsv: No such file or directory
+sort: cannot read: /scratch/sz2524/metagenomics/data/SRS301868/DIAMOND/change_s_e_node.tsv: No such file or directory
+Traceback (most recent call last):
+  File "/gpfsnyu/scratch/sz2524/metagenomics/code/find_overlap.py", line 5, in <module>
+    inputfile=argv[1]#"change_s_e_node.tsv"
+NameError: name 'argv' is not defined
+awk: fatal: cannot open file `/scratch/sz2524/metagenomics/data/SRS301868/DIAMOND/longest_per_og.tsv' for reading (No such file or directory)
+paste: /scratch/sz2524/metagenomics/data/SRS301868/DIAMOND/longest_per_og.tsv: No such file or directory
+Traceback (most recent call last):
+  File "/gpfsnyu/scratch/sz2524/metagenomics/code/find_overlap2.py", line 5, in <module>
+    inputfile=argv[1]#"sorted_longest_per_og_len_node.tsv"
+NameError: name 'argv' is not defined
+awk: fatal: cannot open file `/scratch/sz2524/metagenomics/data/SRS301868/DIAMOND/overlap.tsv' for reading (No such file or directory)
+awk: fatal: cannot open file `/scratch/sz2524/metagenomics/data/SRS301868/DIAMOND/overlap.tsv' for reading (No such file or directory)
+Traceback (most recent call last):
+  File "/gpfsnyu/scratch/sz2524/metagenomics/code/number_of_overlap.py", line 5, in <module>
+    inputfile=argv[1]#overlap_node_s_e_og_pi.tsv"
+NameError: name 'argv' is not defined
+Settings:
+  Output files: "run_idx.*.bt2"
+  Line rate: 6 (line is 64 bytes)
+  Lines per side: 1 (side is 64 bytes)
+  Offset rate: 4 (one in 16)
+  FTable chars: 10
+  Strings: unpacked
+  Max bucket size: default
+  Max bucket size, sqrt multiplier: default
+  Max bucket size, len divisor: 4
+  Difference-cover sample period: 1024
+  Endianness: little
+  Actual local endianness: little
+  Sanity checking: disabled
+  Assertions: disabled
+  Random seed: 0
+  Sizeofs: void*:8, int:4, long:8, size_t:8
+Input files DNA, FASTA:
+  /scratch/sz2524/metagenomics/data/SRS301868/SPAdes/scaffolds.fasta
+Error: could not open /scratch/sz2524/metagenomics/data/SRS301868/SPAdes/scaffolds.fasta
+Total time for call to driver() for forward index: 00:00:00
+Error: Encountered internal Bowtie 2 exception (#1)
+Command: /gpfsnyu/packages/bowtie2/2.3.4.1/bin/bowtie2-build-s --wrapper basic-0 /scratch/sz2524/metagenomics/data/SRS301868/SPAdes/scaffolds.fasta run_idx 
+
+real	0m0.183s
+user	0m0.045s
+sys	0m0.020s
+(ERR): "run_idx" does not exist or is not a Bowtie 2 index
+Exiting now ...
+
+real	0m0.162s
+user	0m0.021s
+sys	0m0.016s
+[E::hts_open_format] Failed to open file /scratch/sz2524/metagenomics/data/SRS301868/Bowtie2/bowtie2_output.sam
+samtools sort: can't open "/scratch/sz2524/metagenomics/data/SRS301868/Bowtie2/bowtie2_output.sam": No such file or directory
+sed: can't read /scratch/sz2524/metagenomics/data/SRS301868/Bowtie2/bowtie2_output.sam: No such file or directory
+Failed to open BAM file /scratch/sz2524/metagenomics/data/SRS301868/Bowtie2/bowtie2_output_sorted.bam
+awk: fatal: cannot open file `/scratch/sz2524/metagenomics/data/SRS301868/DIAMOND/nonoverlap.tsv' for reading (No such file or directory)
+awk: fatal: cannot open file `/scratch/sz2524/metagenomics/data/SRS301868/DIAMOND/record_overlap_interval_len.tsv' for reading (No such file or directory)
+awk: fatal: cannot open file `/scratch/sz2524/metagenomics/data/SRS301868/DIAMOND/record_nonverlap_interval_len.tsv' for reading (No such file or directory)
+Traceback (most recent call last):
+  File "/gpfsnyu/scratch/sz2524/metagenomics/code/expand_to_each_pos.py", line 5, in <module>
+    inputfile1=argv[1]#"/scratch/sz2524/2020summer/BIO/SRS301868/Bowtie2/data_analysis/uniq_node_len.tsv"
+NameError: name 'argv' is not defined
+paste: /scratch/sz2524/metagenomics/data/SRS301868/expand/pos_PI.tsv: No such file or directory
+Traceback (most recent call last):
+  File "/gpfsnyu/scratch/sz2524/metagenomics/code/PI_on_HPC.py", line 10, in <module>
+    inputfile1=argv[1]#"node_pos_cov_info_PI_og_100.tsv"
+NameError: name 'argv' is not defined
+cat: /scratch/sz2524/metagenomics/data/SRS301868/TPM/TSV/*: No such file or directory

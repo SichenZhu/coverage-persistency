@@ -1,0 +1,9 @@
+Step 2.1 in meta.sh 2_raw_algs_db.dmnd: build database using eggNOG/bacteria/2_raw/ data from http://eggnog5.embl.de/#/app/downloads. (Not included in this folder due to its large size but the code to build it is included in the meta.sh).
+
+Step 2.2 in meta.sh COGFC_GN.tsv.gz: is in the format of #column1:proteinID | #column2:OGname - encodes protein ID and its corresponding ortholog group(OG) in eggNOG database (Not included in this folder due to its large size but is easily got through simple data cleaning work). 
+
+OGname is divided into two categories by EggNOG: COG - is more persistent in the evolution process that appear in abundant of descendents. nCOG (non COG) - is more species specific so that it is less persistent and fewer species own them.
+
+Step 2.3 in meta.sh COG_sort_PI.tsv: is in the format of #column1:OGname | #column2: Persistent Index (PI), which is calculated by # species in this OG / # species in total dataset, for OG group.
+
+Step 2.3 in meta.sh nCOG_PI.tsv: is in the format of #column1:OGname | #column2: Persistent Index (PI), which is calculated by # species in this OG / # species in total dataset, for non COG group.
